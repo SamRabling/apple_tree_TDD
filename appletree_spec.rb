@@ -24,4 +24,10 @@ RSpec.describe Appletree do
         expect(@first_tree.apple_count).to eq(31)
     end
 
+    context 'if tree is less than 4 years old' do 
+    it 'does grow apples' do
+        expect(@first_tree.apple_count).to eq(29)
+        end
+    end
+
 end

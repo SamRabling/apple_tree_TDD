@@ -10,7 +10,9 @@ class Appletree
     def year_gone_by
         @age += 1
         @height = (@height * 0.1).ceil + @height
-        @apple_count += 2
+        if @age >= 3 and @age <= 10
+            @apple_count += 2
+        end
     end
 
 end
