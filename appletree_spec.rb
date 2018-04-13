@@ -17,4 +17,11 @@ RSpec.describe Appletree do
         expect{@first_tree.apple_count = 50}.to raise_error(NoMethodError)
     end
 
+    it 'has method that increases attributes when years go by' do
+        @first_tree.year_gone_by
+        expect(@first_tree.age).to eq(6)
+        expect(@first_tree.height).to eq(2)
+        expect(@first_tree.apple_count).to eq(31)
+    end
+
 end

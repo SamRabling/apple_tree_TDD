@@ -7,5 +7,10 @@ class Appletree
         @apple_count = apple_count
     end
 
+    def year_gone_by
+        @age += 1
+        @height = (@height * 0.1).ceil + @height
+        @apple_count += 2
+    end
 
 end
