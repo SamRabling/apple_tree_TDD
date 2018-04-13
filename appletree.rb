@@ -15,4 +15,8 @@ class Appletree
         end
     end
 
+    def apple_picking
+        @apple_count = 0
+    end
+
 end

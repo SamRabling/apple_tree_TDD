@@ -30,4 +30,10 @@ RSpec.describe Appletree do
         end
     end
 
+    it 'takes all apples' do
+        @first_tree.apple_picking
+        expect(@first_tree.apple_count).to eq(0)
+    end
+
+
 end
